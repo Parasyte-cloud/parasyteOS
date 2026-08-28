@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const foundations = [
@@ -26,7 +27,15 @@ export default function Home() {
     <main>
       <nav className="navigation" aria-label="Primary navigation">
         <Link className="brand" href="/" aria-label="ParasyteOS home">
-          <span className="brandMark">P</span>
+          <span className="brandMark">
+            <Image
+              src="/brand/parasyteos-mark-color.png"
+              alt=""
+              width={38}
+              height={38}
+              priority
+            />
+          </span>
           <span>ParasyteOS</span>
         </Link>
 
